@@ -1,42 +1,144 @@
 ﻿<!DOCTYPE html>
-<html>
+<html class="no-js">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dịch Vụ hỗ trợ du lịch toàn diện, Du lịch, Travel" />
+    <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+    <meta name="author" content="FREEHTML5.CO" />
+
+    <title>@ViewBag.Title</title>
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
+
     @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/js")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+    <div id="fh5co-wrapper">
+        <div id="fh5co-page">
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+            <!--HEADER-->
+            <div id="fh5co-header">
+                <header id="fh5co-header-section">
+                    <div class="container">
+                        <div class="nav-header">
+                            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+                            <h1 id="fh5co-logo">@Html.ActionLink("Alaziz VietNam Travle", "Index", "Home")</h1>
+                            <!-- START #fh5co-menu-wrap -->
+                            <nav id="fh5co-menu-wrap" role="navigation">
+                                <ul class="sf-menu" id="fh5co-primary-menu">
+                                    <li class="active">@Html.ActionLink("Trang chủ", "Index", "Home")</li>
+                                    <li>@Html.ActionLink("Giới thiệu", "About", "Home")</li>
+                                    <li>
+                                        @Html.ActionLink("Địa điểm", "Places", "Home");
+                                        <ul class="fh5co-sub-menu">
+                                            <li>
+                                                <a href="">Trong Nước</a>
+                                                <ul class="fh5co-sub-menu">
+                                                    <li>
+                                                        <a href="">Miền Bắc</a>
+                                                        <ul class="fh5co-sub-menu">
+                                                            <li><a>Lào Cai</a></li>
+                                                            <li><a>Yên Bái</a></li>
+                                                            <li><a>Lai Châu</a></li>
+                                                            <li><a>Điện Biên</a></li>
+                                                            <li><a>Sơn La</a></li>
+                                                            <li><a>Hòa Bình</a></li>
+                                                            <li><a>Hà Giang</a></li>
+                                                            <li><a>Tuyên Quang</a></li>
+                                                            <li><a>Phú Thọ</a></li>
+                                                            <li><a>Thái Nguyên</a></li>
+                                                            <li><a>Bắc Cạn</a></li>
+                                                            <li><a>Cao Bằng</a></li>
+                                                            <li><a>Lạng Sơn</a></li>
+                                                            <li><a>Bắc Giang</a></li>
+                                                            <li><a>Quảng Ninh</a></li>
+                                                            <li><a>Hà Nội</a></li>
+                                                            <li><a>Vĩnh Phúc</a></li>
+                                                            <li><a>Bắc Ninh</a></li>
+                                                            <li><a>Hưng Yên</a></li>
+                                                            <li><a>Hải Dương</a></li>
+                                                            <li><a>Thái Bình</a></li>
+                                                            <li><a>Nam Định</a></li>
+                                                            <li><a>Ninh Bình</a></li>
+                                                            <li><a>Hà Nam</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Miền Nam</a>
+                                                        <ul class="fh5co-sub-menu">
+                                                            <li><a>Hà Nam</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Miền Trung</a>
+                                                        <ul class="fh5co-sub-menu">
+                                                            <li><a>Hà Nam</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="">Ngoài Nước</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fh5co-sub-ddown">Dịch Vụ</a>
+                                        <ul class="fh5co-sub-menu">
+                                            <li><a href="">Customized tour</a></li>
+                                            <li><a href="">Resort</a></li>
+                                            <li><a href="">Quán Ăn + Nhà Hàng</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>@Html.ActionLink("Blog", "Blog", "Home")</li>
+                                    <li>@Html.ActionLink("Liên hệ", "Contact", "Home")</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+            </div>
+
+            @RenderBody()
+
+            <!--FOOTER-->
+            <footer>
+                <div id="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3 text-center">
+                                <p class="fh5co-social-icons">
+                                    <a href="#"><i class="icon-twitter2"></i></a>
+                                    <a href="#"><i class="icon-facebook2"></i></a>
+                                    <a href="#"><i class="icon-instagram"></i></a>
+                                    <a href="#"><i class="icon-youtube"></i></a>
+                                </p>
+                                <p>Copyright 2018 <a href="#">Alaziz Vietnam Travel</a>. All Rights Reserved. <br>Made with <i class="icon-heart3"></i> by <a href="https://sharecodemienphi.000webhostapp.com" target="_blank">SCF</a> / Demo Images: <a href="https://sharecodemienphi.000webhostapp.com" target="_blank">SCF</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- END fh5co-page -->
+    </div>
+    <!-- END fh5co-wrapper -->
+
 </body>
 </html>
+
+

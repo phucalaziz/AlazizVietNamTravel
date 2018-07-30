@@ -8,6 +8,7 @@ namespace AlazizVietNamTravel.Controllers
 {
     public class HomeController : Controller
     {
+        // GET: Home
         public ActionResult Index()
         {
             return View();
@@ -15,14 +16,28 @@ namespace AlazizVietNamTravel.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Title = "Giới thiệu";
+
+            return View();
+        }
+
+        public ActionResult Blog()
+        {
+            ViewBag.Title = "Blog";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Title = "Liên hệ";
+
+            return View();
+        }
+
+        public ActionResult Places()
+        {
+            ViewBag.Title = "Địa điểm";
 
             return View();
         }

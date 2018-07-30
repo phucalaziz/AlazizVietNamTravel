@@ -1,17 +1,59 @@
-﻿@{
+﻿
+@{
     ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<div class="fh5co-hero">
+    <div class="fh5co-overlay"></div>
+    <div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/Ha-Longbg.jpg);">
+        <div class="desc animate-box">
+            <h2><em>Liên Hệ</em>.</h2>
+        </div>
+    </div>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+</div>
+
+
+<div id="fh5co-contact" class="fh5co-section animate-box">
+    <div class="container">
+        <form action="#">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="section-title">Địa Chỉ</h3>
+                    <p>Trên bầu trời, dưới mặt đất ở Trái Đất</p>
+                    <ul class="contact-info">
+                        <li><i class="icon-location-pin"></i>Việt Nam, Trái Đất, Hệ Mặt Trời</li>
+                        <li><i class="icon-phone2"></i>+84 1900 1000</li>
+                        <li><i class="icon-mail"></i><a href="#">bitch@gmal.com</a></li>
+                        <li><i class="icon-globe2"></i><a href="#">www.bitch.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="submit" value="Gửi" class="btn btn-primary btn-lg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

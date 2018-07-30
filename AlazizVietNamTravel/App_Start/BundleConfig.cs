@@ -8,23 +8,36 @@ namespace AlazizVietNamTravel
         // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+            //add jquery
+            bundles.Add(new ScriptBundle("~/bundles/js").Include(
+                      "~/Scripts/jquery/jquery-{version}.js",
+                      "~/Scripts/jquery/jquery.validate*",
+                      "~/Scripts/jquery/jquery.min.js",
+                      "~/Scripts/jquery/jquery.easing.1.3.js",
+                      "~/Scripts/jquery/jquery.waypoints.min.js",
+                      "~/Scripts/jquery/jquery.stellar.min.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.validate*"));
+            //add boostrap js
+            bundles.Add(new ScriptBundle("~/bundles/js").Include(
+                      "~/Scripts/bootstrap/bootstrap.js",
+                      "~/Scripts/bootstrap/bootstrap.min.js"));
 
-            // Use the development version of Modernizr to develop with and learn from. Then, when you're
-            // ready for production, use the build tool at https://modernizr.com to pick only the tests you need.
-            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
+            //add modernizr js
+            bundles.Add(new ScriptBundle("~/bundles/js").Include("~/Scripts/modernizr/modernizr-*"));
 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js"));
+            //add superfish js
+            bundles.Add(new ScriptBundle("~/bundles/js").Include("~/Scripts/superfish/superfish.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/js").Include(
+                        "~/Scripts/hoverIntent.js",
+                        "~/Scripts/main.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/animate.css",
+                      "~/Content/icomoon.css",
+                      "~/Content/style.css",
+                      "~/Content/superfish.css"));
         }
     }
 }
